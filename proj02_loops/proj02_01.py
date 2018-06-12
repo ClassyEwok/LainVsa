@@ -15,23 +15,44 @@ print("Sum is " + str(varied))
 # (at least in your final version). Each time you read in a number,
 # you can immediately use it for your sum,
 # and then be done with the number just entered.
-p1shot = input("Player1, rock, paper, or scissors? ")
-p2shot = input("Player2, rock, paper, or scissors? ")
-if p1shot == "rock" and p2shot == "paper":
-    print("Player2 wins! ")
-elif p1shot == "rock" and p2shot == "scissors":
-    print("Player1 wins! ")
-elif p1shot == "paper" and p2shot == "rock":
-    print("Player1 wins! ")
-elif p1shot == "paper" and p2shot == "scissors":
-    print("Player2 wins! ")
-elif p1shot == "scissors" and p2shot == "paper":
-    print("Player1 wins! ")
-elif p1shot == "scissors" and p2shot == "rock":
-    print("Player2 wins! ")
-else:
-    print("It is a Tie! ")
-answ = input("Good Game! Would you like to play again? (Y/N)")
+answ = 0
+playagain = answ
+while answ == "Y"
+    p1shot = input("Player1, rock, paper, or scissors? ")
+    p2shot = input("Player2, rock, paper, or scissors? ")
+    if p1shot == "rock" and p2shot == "paper":
+        print("Player2 wins! ")
+    elif p1shot == "rock" and p2shot == "scissors":
+        print("Player1 wins! ")
+    elif p1shot == "paper" and p2shot == "rock":
+        print("Player1 wins! ")
+    elif p1shot == "paper" and p2shot == "scissors":
+        print("Player2 wins! ")
+    elif p1shot == "scissors" and p2shot == "paper":
+        print("Player1 wins! ")
+    elif p1shot == "scissors" and p2shot == "rock":
+        print("Player2 wins! ")
+    else:
+        print("It is a Tie! ")
+    answ = input("Good Game! Would you like to play again? (Y/N)")
+
+#p1shot = input("Player1, rock, paper, or scissors? ")
+#p2shot = input("Player2, rock, paper, or scissors? ")
+#if p1shot == "rock" and p2shot == "paper":
+#    print("Player2 wins! ")
+#elif p1shot == "rock" and p2shot == "scissors":
+#    print("Player1 wins! ")
+#elif p1shot == "paper" and p2shot == "rock":
+#   print("Player1 wins! ")
+#elif p1shot == "paper" and p2shot == "scissors":
+#    print("Player2 wins! ")
+#elif p1shot == "scissors" and p2shot == "paper":
+#   print("Player1 wins! ")
+#elif p1shot == "scissors" and p2shot == "rock":
+#   print("Player2 wins! ")
+#else:
+#   print("It is a Tie! ")
+#answ = input("Good Game! Would you like to play again? (Y/N)")
 
 #Example:
 # Enter a number to sum, or 0 to indicate you are finished: 4
