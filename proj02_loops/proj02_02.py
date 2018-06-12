@@ -41,8 +41,16 @@ for divisor in range(1, amtn):
     if amtn%divisor == 0:
         print(str(divisor))
 
-
-
+amtofnumbers = 0
+numb = float(input("Enter a number to average, put a zero when done: "))
+average = numb
+while numb != 0:
+    number = float(input("Enter a number to average, put a zero when done: "))
+    total = numb + number
+    numb = number
+    amtofnumbers = amtofnumbers + 1
+    average = total / amtofnumbers
+print("Average is " + str(average))
 
 
 
