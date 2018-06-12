@@ -15,9 +15,8 @@ print("Sum is " + str(varied))
 # (at least in your final version). Each time you read in a number,
 # you can immediately use it for your sum,
 # and then be done with the number just entered.
-answ = 0
-playagain = answ
-while answ == "Y"
+answ = "Y"
+while answ == "Y":
     p1shot = input("Player1, rock, paper, or scissors? ")
     p2shot = input("Player2, rock, paper, or scissors? ")
     if p1shot == "rock" and p2shot == "paper":
