@@ -54,7 +54,6 @@ def choose_word(wordlist):
 wordlist = load_words()
 
 word = choose_word(wordlist)
-print(word)
 
 # your code begins here!
 amtletters = []
@@ -72,7 +71,7 @@ for value in amtletters:
     wordlist.append("_ ")
 wordlist_clean = "".join(wordlist)
 letterguess = input("Guess a letter: ")
-while amtguess != 0 and len(wordansw) != len(amtletters):
+while amtguess != 0 and wordlist != amtletters:
     if letterguess in (alphabet):
         alphabet.remove(letterguess)
         clean_alphabet = "".join(alphabet)
@@ -86,24 +85,52 @@ while amtguess != 0 and len(wordansw) != len(amtletters):
                 wordlist[counter] = letterguess
             counter = counter + 1
         print("It now is: " )
-        print(" ".join(wordlist))
+        print("".join(wordlist))
         letterguess = input("Guess another letter: ")
     else:
         print("Wrong letter!")
         amtguess = amtguess - 1
-        print("Still just: " + wordlist_clean)
-        letterguess = input("Guess another letter: ")
-        
         counter = 0
         for letter in amtletters:
             if letterguess == letter:
                 wordlist[counter] = letterguess
             counter = counter + 1
         print("It now is: " )
-        print(" ".join(wordlist))
+        print("".join(wordlist))
+        print(amtguess)
         letterguess = input("Guess another letter: ")
-if amtletters == 0:
+if amtguess == 0:
     print ("You failed. The president has died.")
+    print("__________________________")
+    print("|/                      \|")
+    print("|                       _|_")
+    print("|                      (X.X)")
+    print("|                       /|\ ")
+    print("|                      / | \ ")
+    print("|                        |")
+    print("|                       / \ ")
+    print("|                      /   \ ")
+    print("| ")
+    print("| ")
+    print("| ")
+    print("| ")
+    print("|\ ")
+    print("---------")
+    print(" _____     ________    _____")
+    print("| | \ \    |_    _|   | | \ \ ")
+    print("| |_/ /      |  |     | |_/ |")
+    print("| |\ \       |  |     |  ___/")
+    print("| | \ \    __|  |__   | |")
+    print("|_|  \_\   |______|   |_|")
+    print("The word was " + word)
 elif amtletters == wordlist:
     print("You got the word!")
+    print("The president has been saved!!!")
+    print("  ___")
+    print("\(^^,)/")
+    print(" \_|_/")
+    print("   |")
+    print("   | ")
+    print("  / \ ")
+    print(" /   \ ")
 #elif
